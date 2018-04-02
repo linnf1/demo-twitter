@@ -9,6 +9,20 @@
   </head>
 
   <body>
+    <!--Only returns notice if there is one-->
+    <% if flash[:notice] %>
+    <div class="notification is-primary global-notifcation">
+      <p class="notice"><%= notice %></p>
+    </div>
+    <% end %>
+    <% if flash[:alert] %>
+    <div class="notification is-danger global-notifcation">
+      <p class="alert"><%= alert %></p>
+    </div>
+    <% end %>
+        
     <%= yield %>
+    
+    
   </body>
 </html>
