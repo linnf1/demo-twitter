@@ -1,3 +1,3 @@
 # Demo Twitter Application
-Description coming soon...
-
+_Demo application resembling twitter_
+![Screenshot](twitt.png)
