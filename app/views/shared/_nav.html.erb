@@ -4,9 +4,7 @@
 		<h1 class="title is-5">Twitter</h1>
 	<% end %>
 	<div class="navbar-burger burger" data-target="navbarExample">
-			<span></span>
-			<span></span>
-			<span></span>
+			<span><%= login_helper 'button is-info' %></span>
 	</div>
  </div>
 
@@ -16,6 +14,9 @@
 			<div class="field is-grouped">
 				<p class="control">
 					<%= link_to 'New Tweet', new_tweet_path, class: "button is-info is-inverted" %>
+				</p>
+				<p class="control">
+				  <%= login_helper 'button is-info' %>
 				</p>
         </div>
 			</div>
